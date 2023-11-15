@@ -2,8 +2,7 @@ import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "@/app/components/getPostMetadata";
-import { AdUnit } from "@eisberg-labs/next-google-adsense";
-import Script from "next/script";
+import GoogleAd from "@/app/components/Adsense";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -27,7 +26,7 @@ const PostPage = (props: any) => {
   return (
     <div>
       <h2 className="text-2xl text-blue-600 mt-4">{post.data.title}</h2>
-
+      <GoogleAd />
       <main className="my-10">
         <Markdown>{post.content}</Markdown>
       </main>
