@@ -9,17 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@eisberg-labs/next-google-adsense": "^4.0.2",
+    "gray-matter": "^4.0.3",
+    "markdown-to-jsx": "^7.3.2",
+    "next": "13.5.6",
+    "nextjs-google-adsense": "^1.0.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.6"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
     "postcss": "^8",
-    "tailwindcss": "^3"
+    "tailwindcss": "^3",
+    "typescript": "^5"
   }
 }
