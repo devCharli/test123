@@ -1,10 +1,11 @@
 import Script from "next/script";
 
-const Head = () => {
+export default function Head() {
   return (
-    <head>
-      <meta name="viewport" content="width=device-width" />
-      <title>프레쉬 팟푸리</title>
+    <>
+      <title>Charli's Blog</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
+      <link rel="icon" href="/favicon.ico" />
       {process.env.NODE_ENV === "production" && (
         <Script
           async
@@ -12,8 +13,6 @@ const Head = () => {
           crossOrigin="anonymous"
         ></Script>
       )}
-    </head>
+    </>
   );
-};
-
-export default Head;
+}
