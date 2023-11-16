@@ -1,6 +1,7 @@
 ---
 title: "Create retro games with PICO-8"
 subtitle: "8-bit games are a great way to learn and expand your portfolio."
+description: "독감은 인플루엔자 바이러스에 의한 급성 호흡기 질환이다. 독감은 상부 호흡기계(코, 목)나 하부 호흡기계(폐)를 침범하며 갑작스런 고열, 두통, 근육통, 전신 쇠약감과 같은 전반적인 신체 증상을 동반한다. 독감은 우리나라를 비롯한 전 세계에서 발생하며, 계절 구분이 있는 지역에서는 매년 겨울에 소규모로 유행되고 있다. 독감은 전염성이 강하고, 노인, 소아, 및 기저질환이 있는 사람이 이환되면 사망률이 증가하고 합병증이 발생할 수 있다."
 date: "2020-12-19"
 cr: ["https://www.artstation.com/shizuorin"]
 ---

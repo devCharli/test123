@@ -1,6 +1,7 @@
 ---
 title: "Getting Started with AWS"
 subtitle: "Create an AWS account and set up CLI/SDK access."
+description: "독감은 인플루엔자 바이러스에 의한 급성 호흡기 질환이다. 독감은 상부 호흡기계(코, 목)나 하부 호흡기계(폐)를 침범하며 갑작스런 고열, 두통, 근육통, 전신 쇠약감과 같은 전반적인 신체 증상을 동반한다. 독감은 우리나라를 비롯한 전 세계에서 발생하며, 계절 구분이 있는 지역에서는 매년 겨울에 소규모로 유행되고 있다. 독감은 전염성이 강하고, 노인, 소아, 및 기저질환이 있는 사람이 이환되면 사망률이 증가하고 합병증이 발생할 수 있다."
 date: "2020-12-27"
 ---
 
@@ -42,8 +43,8 @@ The CLI will access your AWS account via an "IAM user." You can create one from 
 
 Once the user is created, you'll need to generate access keys (passwords, essentially) for it.
 
-* [Creating an Admin IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html)
-* [Creating access keys for a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey)
+- [Creating an Admin IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html)
+- [Creating access keys for a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey)
 
 Your access keys should look something like this:
 
@@ -51,7 +52,6 @@ Your access keys should look something like this:
 Access key ID: AKIAIOSFODNN7EXAMPLE
 Secret access key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
-
 
 ### Configure the CLI
 
@@ -102,8 +102,7 @@ Finally, to use AWS directly from your application code, you need to download th
 
 The SDKs can be configured in different ways as well, but by default it usually uses the same profiles and credentials stored by your `aws configure`.
 
-
-### That's it! 
+### That's it!
 
 You're all set to start using AWS.
 
@@ -111,35 +110,34 @@ You're all set to start using AWS.
 
 When we bring "the cloud" into a project, it's usually because there's some capability we'd like to add.
 
-* Hosting for a website or service.
-* File or data storage.
-* On-demand computation.
-* Authentication.
+- Hosting for a website or service.
+- File or data storage.
+- On-demand computation.
+- Authentication.
 
 And there's many viable solutions to choose from—[Azure](https://azure.microsoft.com/en-au/), [Google Cloud](https://cloud.google.com), [Firebase](https://firebase.google.com), [Digital Ocean](https://try.digitalocean.com).
 
 So why could you choose [AWS](https://aws.amazon.com/what-is-aws/) over any of these alternatives? From a new user's perspective:
 
-* **Largest marketshare (at 30%)** which roughly translates to lots of community resources and job opportunities.
+- **Largest marketshare (at 30%)** which roughly translates to lots of community resources and job opportunities.
 
-* **Most services available (175+)** which means more tools at your disposal, well-integrated under one umbrella.
+- **Most services available (175+)** which means more tools at your disposal, well-integrated under one umbrella.
 
 On the flip-side, the biggest drawback is its upfront complexity.
 
 Personally though, the reason I use AWS is because it's the technology I'm most familiar with.
 
-
 ## Why Serverless?
 
-**It's cheaper.** Most cloud "getting started" guides will show you how to spin up a server—a mercenary rented computer that stays online  24/7 to do your bidding.
+**It's cheaper.** Most cloud "getting started" guides will show you how to spin up a server—a mercenary rented computer that stays online 24/7 to do your bidding.
 
 But for most of my projects, I'm going utilize technology that doesn't require a hosted server. In particular:
 
-| Service | Purpose |
-| --- | --- |
-| S3 | File storage |
-| DynamoDB | Database |
-| Lambda | Compute engine |
+| Service  | Purpose        |
+| -------- | -------------- |
+| S3       | File storage   |
+| DynamoDB | Database       |
+| Lambda   | Compute engine |
 
 Their on-demand pricing means the cost scales with usage. There is a [free tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc), and it only begins to cost money if usage exceeds a certain amount.
 
@@ -149,6 +147,6 @@ In comparison, the price of hosting a server typically starts at **$5.00 per mon
 
 ## Continue Learning
 
-* [Official documentation](https://aws.amazon.com/getting-started/)
-* [Free YouTube videos](https://www.youtube.com/watch?v=ubCNZRNjhyo)
-* [Udemy Courses](https://www.udemy.com/course/aws-certified-developer-associate/)
+- [Official documentation](https://aws.amazon.com/getting-started/)
+- [Free YouTube videos](https://www.youtube.com/watch?v=ubCNZRNjhyo)
+- [Udemy Courses](https://www.udemy.com/course/aws-certified-developer-associate/)

@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
 import Head from "./head";
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Nanum_Gothic({
+  weight: ["400", "800"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,14 +20,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const header = (
-    <header>
-      <div>
-        <Link href="/">
-          <h1>Charli&apos; Blog</h1>
-        </Link>
-        <p>My Nextjs tech blog</p>
-      </div>
-    </header>
+    <Link href="/">
+      <h1 className="text-xl text-blue-600 underline underline-offset-4">
+        프레쉬팟푸리
+      </h1>
+    </Link>
   );
 
   const footer = (
@@ -37,10 +37,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head />
-      <body className={inter.className}>
-        {header}
-        {children}
-        {footer}
+      <body className={`${inter.className} bg-slate-300`}>
+        <div className="container p-10 leading-loose mx-auto max-w-7xl bg-slate-100">
+          {header}
+          {children}
+          {footer}
+        </div>
       </body>
     </html>
   );

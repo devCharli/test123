@@ -23,9 +23,13 @@ export const generateStaticParams = async () => {
 const PostPage = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
+  console.log(post);
   return (
     <div>
-      <h2 className="text-2xl text-blue-600 mt-4">{post.data.title}</h2>
+      <h2 className="text-2xl text-blue-600 my-6 font-extrabold	">
+        {post.data.title}
+      </h2>
+      <p className="indent-8">{post.data.description}</p>
       <GoogleAd />
       <main className="my-10">
         <Markdown>{post.content}</Markdown>
