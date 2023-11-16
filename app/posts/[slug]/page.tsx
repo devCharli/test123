@@ -27,10 +27,10 @@ const PostPage = (props: any) => {
   return (
     <div>
       <div className="my-12 text-center">
-        <h2 className="text-2xl text-blue-600 font-extrabold">
+        <h2 className="text-2xl text-blue-600 font-extrabold mb-6">
           {post.data.title}
         </h2>
-        <p className="indent-8 text-slate-400 my-2">{post.data.description}</p>
+        <p className="text-left text-slate-400 my-2">{post.data.description}</p>
       </div>
       <div className="my-2">
         <GoogleAd />

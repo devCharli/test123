@@ -49,8 +49,8 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <Head />
-      <body className={inter.className}>
-        <div className="mx-auto max-w-3xl px-6 leading-loose bg-slate-100">
+      <body className={`${inter.className} bg-slate-100`}>
+        <div className="mx-auto max-w-3xl p-6 leading-loose bg-slate-50">
           {header}
           {children}
           {footer}
