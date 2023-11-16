@@ -4,7 +4,7 @@ const Head = () => {
   return (
     <head>
       <meta name="viewport" content="width=device-width" />
-      <title>Charli Blog</title>
+      <title>프레쉬 팟푸리</title>
       {process.env.NODE_ENV === "production" && (
         <Script
           async

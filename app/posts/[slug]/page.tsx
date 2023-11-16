@@ -30,7 +30,9 @@ const PostPage = (props: any) => {
         {post.data.title}
       </h2>
       <p className="indent-8">{post.data.description}</p>
-      <GoogleAd />
+      <div className="max-w-7xl">
+        <GoogleAd />
+      </div>
       <main className="my-10">
         <Markdown>{post.content}</Markdown>
       </main>
